@@ -1,4 +1,4 @@
-import { readFileAsync } from "./utils/file.js";
+import { readFileAsync } from "../utils/file.js";
 
 const input = await readFileAsync('./02-input.txt');
 
