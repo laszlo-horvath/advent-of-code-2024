@@ -1,4 +1,4 @@
-import { readFileAsync } from "./utils/file.js";
+import { readFileAsync } from "../utils/file.js";
 
 const exampleInput = await readFileAsync('./01-input.txt');
 
@@ -13,15 +13,15 @@ exampleInput.split('\n')
     firstList.push(x);
     secondList.push(y);
   });
-// console.log('--- listChanged:', listChanged);
-console.log('--- 1:', firstList);
-console.log('--- 2:', secondList);
+
+console.log('--- 1st list:', firstList);
+console.log('--- 2nd list:', secondList);
 
 firstList.sort((a, b) => a - b);
 secondList.sort((a, b) => a - b);
 
-console.log('--- firstList:', firstList);
-console.log('--- secondList:', secondList);
+console.log('--- 1st list sorted:', firstList);
+console.log('--- 2nd list sorted:', secondList);
 
 const distances = [];
 for (let index = 0; index < firstList.length; index++) {
